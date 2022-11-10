@@ -1,0 +1,249 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*estios generales*/
+
+body {
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*estilos de header*/
+
+.menu {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu-telefono {
+    display: none;
+}
+
+.menu-sections {
+    display: none;
+}
+
+.menu-buscar {
+    display: none;
+}
+
+.menu-logo img {
+    width: 30%;
+    margin: 5% 35% 5% 35%
+}
+
+/*estilos de main home*/
+
+.main-carrusel img {
+    width: 90%;
+    margin: 1% 5% 1% 5%;
+}
+
+.main-tituloh2 h2 {
+    font-weight: 300;
+    text-align: center;
+    color: #262626;
+    font-size: 0.8rem;
+    margin-bottom: 10%;
+}
+
+/*estilos del footer*/
+
+
+.footer-tituloh3 h3 {
+    font-weight: 300;
+    text-align: center;
+    color: #262626;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.footer-tituloh3 a {
+    color: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    text-decoration: none;
+}
+
+.footer-tituloh3 a:hover {
+    color: #ddddd8;
+    text-align: center;
+}
+
+.footer-img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-img img {
+    width: 50%;
+}
+
+.footer-fondo {
+    background-color: #ddddd8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+
+.footer-tituloh4 {
+    color: gray;
+}
+
+.footer-tituloh4 h4 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+
+.footer-section li {
+    color: gray;
+    font-size: 0.2;
+    text-align: center;
+    List-Style: none;
+    font-weight: 100;
+    margin-bottom: 0.5%;
+}
+
+.footer-wsp img {
+    width: 15%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+/*mq*/
+
+@media screen and (min-width:800px) {
+
+    /*estilos header*/
+
+    .menu-telefono,
+    .menu-sections,
+    .menu-buscar{
+        display: block;
+    }
+
+    .menu-telefono {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    
+    .menu-telefono h1 {
+        color: gray;
+        font-size: 0.8rem;
+        font-weight: 100;
+        margin-bottom: 10%;
+    }
+    
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .menu-sections {
+        font-weight: 300;
+        color: black;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .menu-sections li {
+        text-decoration: none;
+        list-style: none;
+    }
+    
+    .menu-sections a {
+        font-weight: inherit;
+        color: inherit;
+        font-size: inherit;
+        text-decoration: none;
+    }
+
+    .menu-sections a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .menu-logo img {
+        width: 40%;
+        margin-left: 45%;
+    }
+    
+    .menu-buscar{
+        margin-right: 7%;
+    }
+
+    /*estilos del main home*/
+    
+    .main-carrusel{
+        width: 90%;
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+
+    .main-tituloh2 h2 {
+        font-weight: 300;
+        text-align: center;
+        color: #262626;
+        font-size: 1.2rem;
+        margin-bottom: 10%;
+    }
+
+    /*estilos del footer*/
+
+    .footer-tituloh3 h3 {
+        font-weight: 400;
+        text-align: center;
+        color: #262626;
+        font-size: 2rem;
+        margin-bottom: 2.5rem
+    }
+    
+    .footer-tituloh3 a {
+        color: inherit;
+        font-weight: inherit;
+        font-size: inherit;
+        text-decoration: none;
+    }
+    
+    .footer-tituloh3 a:hover {
+        color: #ddddd8;
+        text-align: center;
+    }
+
+    .footer-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-img img {
+        width: 16.6%;
+    }
+
+    .footer-wsp img{
+        width: 6%;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+    }
+
+}
